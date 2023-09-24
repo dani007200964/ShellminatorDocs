@@ -1,2 +1,323 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv=Refresh content="0;url=V1.2.2/html/index.html"></head></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+            font-size: 30px;
+            color: white;
+            background: #202731;
+            overflow-x: hidden;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .cover {
+            background: #2e4053;
+        }
+
+        .features {
+            background: #2980b9;
+        }
+        .arduino {
+            background: #8e44ad;
+        }
+        .color-3 {color: #9900CC;}
+        .color-4 {color: #8bc34a;}
+        .color-5 {color: #f57c00;}
+
+        .topSeparator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .topSeparator svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 76px;
+        }
+
+        .topSeparator .shape-fill {
+            fill: #8e44ad;
+        }
+
+        .supportedSeparator {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .supportedSeparator svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 76px;
+        }
+
+        .supportedSeparator .shape-fill {
+            fill: #2980b9;
+        }
+
+        .supportedScreen {
+            display: flex;
+            position:relative;
+            top:30px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .supportedList {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .supportedImage {
+            display: flex;
+            flex-direction: column;
+            top:30px;
+        }
+
+        #textLeft {
+            text-align:right;
+            position:relative;
+            font-size:30px;
+            transform: translate(-200%, 0) rotate( 0deg );
+            height: 40px;
+        }
+
+        #textRight {
+            text-align:left;
+            position:relative;
+            font-size:30px;
+            visibility: hidden;
+            color: #8bc34a;
+            height: 40px;
+        }
+
+        .featuresContainer {
+            display: flex;
+            position:relative;
+            top:40px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .featuresImage {
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            top:40px;
+            padding: 30px;
+        }
+
+        .featuresText {
+            display: flex;
+            flex-direction: column;
+            font-size:40px;
+        }
+
+        featureSection {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            min-height: 400px;
+            padding: 10px 10vw;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+
+    <section class="cover">
+
+        <img src="media/logo.svg">
+
+        <h1>Shellminator Library</h1>
+
+        <img src="media/terminal.gif">
+
+        <p>Shellminator is a powerful terminal interface designed for embedded systems.</p>
+
+        <div class="topSeparator">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+    <section class="arduino">
+
+        <img src="media/arduino_logo.svg">
+
+        <h1>Shellminator is Arduino compatible out of the box.</h1>
+        <p>We love cute little boards, so we designed Shellminator to be available on as many of them as possible.</p>
+
+        <div class="supportedScreen">
+            <div class="supportedList">
+                <div id="textLeft" class="leftText0" >Arduino Uno R3</div>
+                <div id="textLeft" class="leftText1" >Arduino Uno R4 Minima</div>
+                <div id="textLeft" class="leftText2" >Arduino Uno R4 WiFi</div>
+                <div id="textLeft" class="leftText3" >Arduino Leonardo</div>
+                <div id="textLeft" class="leftText4" >Arduino Micro</div>
+                <div id="textLeft" class="leftText5" >Arduino Zero</div>
+                <div id="textLeft" class="leftText6" >Arduino Nano</div>
+                <div id="textLeft" class="leftText7" >Arduino Nano ESP32</div>
+                <div id="textLeft" class="leftText8" >Raspberry Pi Pico</div>
+                <div id="textLeft" class="leftText9" >ESP32</div>
+                <div id="textLeft" class="leftText10">ESP8266</div>        
+            </div>
+            <div class="supportedList">
+                <div id="textRight" class="rightText0"  >✅</div>
+                <div id="textRight" class="rightText1"  >✅</div>
+                <div id="textRight" class="rightText2"  >✅</div>
+                <div id="textRight" class="rightText3"  >✅</div>
+                <div id="textRight" class="rightText4"  >✅</div>
+                <div id="textRight" class="rightText5"  >✅</div>
+                <div id="textRight" class="rightText6"  >✅</div>
+                <div id="textRight" class="rightText7"  >✅</div>
+                <div id="textRight" class="rightText8"  >✅</div>
+                <div id="textRight" class="rightText9"  >✅</div>
+                <div id="textRight" class="rightText10" >✅</div>
+            </div>
+            <div class="supportedList">
+                <img src="supported_terminal.svg">
+            </div>
+        </div>
+        <h1>And more</h1>
+
+        <div class="supportedSeparator">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+    <featureSection class="features">
+        <h1>Features</h1>
+
+        <div class="featuresContainer">
+            <img class="featuresImage" src="terminal.gif">
+            <p class="featuresText">Customizing the output has never been easier. Color it, shape it like a real terminal ninja.🥷</p>
+        </div>
+
+        <div class="featuresContainer">
+            <p class="featuresText">It knows everything a modern terminal needs to know:<br>🗿 History<br>🕵 Search Functions<br>⌨️ Shortcuts<br>📑 Text editing</p>
+            <img class="featuresImage" src="terminal.gif">
+        </div>
+
+        <div class="featuresContainer">
+            <img class="featuresImage" src="terminal.gif">
+            <p class="featuresText">It does not allocate memory dynamically, so it is clear at compile time how much memory it needs. You don't have to worry about running out of memory on the go.</p>
+        </div>
+
+        <div class="featuresContainer">
+            <p class="featuresText">If you love to hack, you'll love this. The behavior of any shortcut key can be customized at runtime.</p>
+            <img class="featuresImage" src="terminal.gif">
+        </div>
+        
+        <div class="featuresContainer">
+            <img class="featuresImage" src="terminal.gif">
+            <p class="featuresText">Thanks to its non-blocking architecture, it doesn't require any tasks to function properly.</p>
+        </div>
+
+        <div class="featuresContainer">
+            <p class="featuresText">If you love to hack, you'll love this. The behavior of any shortcut key can be customized at runtime.</p>
+            <img class="featuresImage" src="terminal.gif">
+        </div>
+        
+        <div class="featuresContainer">
+            <img class="featuresImage" src="terminal.gif">
+            <p class="featuresText">Wouldn't you like your roommate to poke fun at your new project at college? Protect it with a password!</p>
+        </div>
+
+    </featureSection>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Sapiente, fuga doloribus. Autem obcaecati quaerat repellendus, quisquam, quasi beatae voluptatem est harum illo consectetur nisi! Molestias adipisci quasi magni quos perferendis impedit praesentium natus architecto, libero reiciendis saepe aspernatur.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Soluta, magni dolorem voluptatem molestiae voluptatibus vero amet, architecto earum laudantium quia labore alias explicabo itaque expedita totam consequuntur magnam. Ipsam, eius voluptate dolorum corporis sed esse magnam quaerat vel!</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Numquam, deserunt ad rerum quo unde molestias beatae veritatis eligendi, ab sequi minima aperiam mollitia laudantium ipsum corrupti commodi maxime magni fugit optio saepe ducimus officia eaque? Ipsum, reiciendis dicta.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Vitae id porro et ab expedita dolore quod laborum ipsam atque. Debitis nostrum quis eius voluptatibus quas repellat culpa error, ex sint tenetur dolorum, voluptatem excepturi cumque provident eligendi fuga.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Alias architecto possimus, consectetur reiciendis ullam libero? Explicabo nulla exercitationem maxime amet officia ratione totam, eos, dolor esse, nisi aliquam ea deleniti nesciunt? Hic a aspernatur magnam officia esse voluptate?</p>
+    </section>
+
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    <script>
+
+    const supportedBoards = gsap.utils.toArray("#textLeft");
+
+    supportedBoards.forEach( (supportedBoards) => {
+        gsap.to (supportedBoards, {
+            x:'0%',
+            rotate: 0,
+            duration: 0.85,
+            scrollTrigger: {
+                trigger: supportedBoards,
+                scrub: true,
+                start: 'top 200%'
+            }
+        });
+    });
+
+    const supportedText = gsap.utils.toArray("#textRight");
+
+    supportedText.forEach((supportedText) => {
+        gsap.to(supportedText, {
+            autoAlpha: 1,
+            scrollTrigger: {
+                trigger: supportedText,
+                scrub: true,
+                start: 'top 40%'
+            }
+        });
+    });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap' );
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+separator {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20vw;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur( 5px );
+    transform: translateX( -100% );
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur( 0 );
+    transform: translateX( 0 );
+}
+
+.logo:nth-child(2){
+    transition-delay: 250ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 500ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 750ms;
+}
+
+.logo:nth-child(5){
+    transition-delay: 1000ms;
+}
+
+.logo:nth-child(6){
+    transition-delay: 1250ms;
+}
+
+.logo:nth-child(7){
+    transition-delay: 1500ms;
+}
+
+.logo:nth-child(8){
+    transition-delay: 1750ms;
+}
+
+.logo:nth-child(9){
+    transition-delay: 2000ms;
+}
+
+.logo:nth-child(10){
+    transition-delay: 2250ms;
+}
+
+.topSeparator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.topSeparator svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.topSeparator .shape-fill {
+    fill: #8e44ad;
+}
+
+.arduino {
+    background: #8e44ad;
+}
