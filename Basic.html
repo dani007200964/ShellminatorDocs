@@ -6,6 +6,11 @@
     <body>
 
         <style>
+
+            body {
+                overflow-x: hidden;
+            }
+
             .container {
                 position: absolute;
                 left: 50%;
@@ -14,16 +19,28 @@
 
             .commandLine {
                 position: absolute;
-                left:289px;
-                top: 175px;
+                left:340px;
+                top: 190px;
+                z-index: 1000;
+            }
+            .screenButtonOne {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
                 z-index: 100;
             }
         </style>
 
         <div class="container">
             <div id="terminal" class="commandLine"></div>
-            <img src="computer_background.jpg">
+            <img src="background test.png">
+            <img src="button_1_on.png" class="screenButtonOne" usemap="#button_one_map">
+
         </div>
+
+        <map name="button_one_map">
+            <area id="button_one_area" shape="rect" coords="1062,213,1136,262" onclick="button_one_event()" alt="Button 1">
+        </map>
 
         <script src="https://cdn.jsdelivr.net/npm/xterm@4.17.0/lib/xterm.min.js"></script>
         <script>
@@ -56,6 +73,11 @@
             term.open(document.getElementById("terminal"));
 
             var Module;
+
+
+            function button_one_event(){
+                console.log( "Button 1 clicked!" );
+            }
 
 
         </script>
