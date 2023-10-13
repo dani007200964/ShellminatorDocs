@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Basic</title>
+        <link rel="stylesheet" href="style/xterm.css">
+        <link rel="stylesheet" href="style/mainPage.css">
+    </head>
+    <body>
+
+        <section class="front">
+
+            <img src="media/logo.svg">
+    
+            <h1>Shellminator Library</h1>
+    
+            <img src="media/terminal.gif">
+    
+            <p>Shellminator is a powerful terminal interface designed for embedded systems.</p>
+    
+            <div class="frontSeparator">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                </svg>
+            </div>
+    
+        </section>
+
+        <section class="try_out">
+    
+            <h1>A live demo is worth 1000 words.</h1>
+
+            <p>You can find an interactive demo below. This demo uses the Shellminator library as interface and Commander-API for command parsing.</p>
+    
+        </section>
+
+        <div class="container">
+            <div id="terminal" class="commandLine"></div>
+            <img src="media/computer_output_1_off.png" class="screenOutputOne" id="output_one">
+            <img src="media/computer_background.png">
+            <img src="media/computer_btn1_off.png" class="screenButtonOne" id="button_one">
+            <img src="media/computer_btn2_off.png" class="screenButtonTwo" id="button_two">
+            <img src="media/computer_btn3_off.png" class="screenButtonThree" id="button_three">
+            <img src="media/computer_btn4_off.png" class="screenButtonFour" usemap="#button_map" id="button_four">
+            <footer>&copy; Copyright 2023 Daniel Hajnal</footer>
+        </div>
+
+        <map name="button_map">
+            <area id="button_one_area" shape="rect" coords="1062,213,1136,262" onclick="button_one_event()" alt="Button 1">
+            <area id="button_two_area" shape="rect" coords="1062,275,1136,325" onclick="button_two_event()" alt="Button 2">
+            <area id="button_three_area" shape="rect" coords="1062,340,1136,390" onclick="button_three_event()" alt="Button 3">
+            <area id="button_four_area" shape="rect" coords="1062,405,1136,455" onclick="button_four_event()" alt="Button 4">
+        </map>
+
+
+
+        <script src="js/xterm.min.js"></script>
+        <script src="js/logic.js"></script>
+        <script src=./Basic.js></script>
+
+        
+    </body>
+</html>

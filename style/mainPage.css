@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: white;
+    background: #131212;    
+    overflow-x: hidden;
+}
+
+.container {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-30%);
+    caret-color: transparent;
+    padding-bottom: 100px;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.commandLine {
+    position: absolute;
+    left:330px;
+    top: 190px;
+    z-index: 1000;
+}
+
+.screenButtonOne {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.screenButtonTwo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.screenButtonThree {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.screenButtonFour {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.screenOutputOne {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+
+.computerSeparator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.computerSeparator svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.computerSeparator .shape-fill {
+    fill: #8e44ad;
+}
+
+.front {
+    background: #2e4053;
+}
+
+.frontSeparator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.frontSeparator svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.frontSeparator .shape-fill {
+    fill: #131212;
+}
+
+.try_out {
+    background: #131212;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
